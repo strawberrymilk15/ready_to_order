@@ -1,0 +1,142 @@
+<div class="header_div">
+    <div class="header_flex">
+        <%= link_to root_path, class:"header_link" do %>
+            <%= image_tag "3.png", class:"header_left_logo", alt:"ロゴ" %>
+        <%end%>
+        <div class="humberger_div sm">
+            <p><i class="fa-solid fa-burger"></i></p>
+        </div>
+        <div class="header_right_flex pc">
+            <div class="header_right_contents">
+                <p class="header_rigth_p">
+                     <%= link_to "新規登録", new_shop_registration_path, class:"link_a"%>
+                </p>
+                <p class="header_rigth_p1">
+                    <%= link_to "ログイン", new_shop_session_path, class:"link_a"%>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="second_header_flex pc">
+        <p class="second_header_contents">
+            <%= link_to "TOP", root_path, class:"header_a"%>
+        </p>
+        <p class="second_header_contents">
+             <%= link_to "メリット", "#", class:"header_a"%>
+        </p>
+        <p class="second_header_contents">
+             <%= link_to "活用例", "#", class:"header_a"%>
+        </p>
+        <p class="second_header_contents">
+             <%= link_to "導入の流れ", "#", class:"header_a"%>
+        </p>
+        <p class="second_header_contents">
+            <%= link_to "料金について", "#", class:"header_a"%>
+        </p>
+        <p class="second_header_contents">
+             <%= link_to "機能一覧", "#", class:"header_a"%>
+        </p>
+        <p class="second_header_contents">
+             <%= link_to "サポート", "#", class:"header_a"%>
+        </p>
+    </div>
+</div>
+<div class="hero_contents">
+    <div class="hero_bunner">
+        <p class="hero_b_p">飲食店のための</p>
+        <p class="hero_b_p1">簡単導入<br>セルフオーダーアプリ</p>
+    </div>
+    <p class="hero_recommend_btn">
+        <%= link_to "今すぐ登録する", new_shop_registration_path, class:"link_a"%>
+    </p>
+</div>
+
+<div class="first_secton">
+    <h2 class="first_sec_h2">業界最安！初期費用０円・月額利用料５００円で導入できる</h2>
+    <div class="first_sec_flex">
+        <p class="first_sec_p">登録頂くと、スマホやタブレットなどインターネットの繋がるウェブ上から簡単に利用ができます。スマホやタブレットをテーブルに配備いただくことで、お客様は、メニューの閲覧やそのまま注文ができます。オーダー情報は、お店の管理画面上で確認が可能。破格の月額料金で、業務効率を劇的に改善できます。
+        </p>
+        <%= image_tag "54.png",class:"first_sec_img" %>
+    </div>
+</div>
+
+<div class="second_secton">
+    <h2 class="second_sec_h2">機能も豊富なラインナップが揃っています</h2>
+    <div class="second_sec_flex">
+        <div class="second_sec_contens">
+            <%= image_tag "7.png",alt:"簡単注文",class:"second_sec_img" %>
+            <p class="second_con_p">簡単注文</p>
+            <p class="second_con_p1">メニューを直感的に閲覧、注文ができます。</p>
+        </div>
+        <div class="second_sec_contens">
+            <%= image_tag "8.png",alt:"注文履歴からのおかわり",class:"second_sec_img" %>
+            <p class="second_con_p">注文履歴からのおかわり</p>
+            <p class="second_con_p1">注文履歴もしっかり確認できます。また、注文履歴からおかわりをすぐに注文できます。
+            </p>
+        </div>
+        <div class="second_sec_contens">
+            <%= image_tag "9.png",alt:"無料サービス対応",class:"second_sec_img" %>
+            <p class="second_con_p">無料サービス対応</p>
+            <p class="second_con_p1">サービス商品では、「おしぼり」「グラス」「灰皿」といった０円提供商品を登録し、注文することが可能です。
+            </p>
+        </div>
+        <div class="second_sec_contens">
+            <%= image_tag "10.png",alt:"オーダーストップ機能",class:"second_sec_img" %>
+            <p class="second_con_p">オーダーストップ機能</p>
+            <p class="second_con_p1">管理者画面側でオーダーストップを設定すると、対象のメニューをオーダー不可にできます。<br>もちろん再開も簡単にできます。
+            </p>
+        </div>
+        <div class="second_sec_contens">
+            <%= image_tag "11.png",alt:"店員・会計呼出",class:"second_sec_img" %>
+            <p class="second_con_p">店員・会計呼出</p>
+            <p class="second_con_p1">店員呼出、会計呼出ボタンも装備。</p>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer_flex">
+        <div class="footer_contents">
+            <p class="footer_con_p">
+                <%= link_to "TOP", root_path, class:"link_a"%>
+            </p>
+            <p class="footer_con_p">
+                <%= link_to "メリット", "#", class:"link_a"%>
+            </p>
+            <p class="footer_con_p">
+                <%= link_to "活用例", "#", class:"link_a"%>
+            </p>
+            <p class="footer_con_p">
+                <%= link_to "導入の流れについて", "#", class:"link_a"%>
+            </p>
+        </div>
+        <div class="footer_contents">
+            <p class="footer_con_p">
+                <%= link_to "料金について", "#", class:"link_a"%>
+            </p>
+            <p class="footer_con_p">
+                <%= link_to "機能一覧", "#", class:"link_a"%>
+            </p>
+            <p class="footer_con_p">
+                <%= link_to "サポート", "#", class:"link_a"%>
+            </p>
+            <p class="footer_con_p">
+                <%= link_to "よくある質問", "#", class:"link_a"%>
+            </p>
+        </div>
+        <div class="footer_contents">
+            <p class="footer_con_p">
+                <%= link_to "会社概要", "#", class:"link_a"%>
+            </p>
+            <p class="footer_con_p">
+                <%= link_to "プライバシーポリシー", "#", class:"link_a"%>
+            </p>
+            <p class="footer_con_p">
+                <%= link_to "特定商取引法に基づく表示", "#", class:"link_a"%>
+            </p>
+            <p class="footer_con_p">
+                <%= link_to "利用規約", "#", class:"link_a"%>
+            </p>
+        </div>
+    </div>
+    <p class="footer_bottom_p">Copyright&copy;2022 ready to order Inc.All Rights Reserved</p>
+</footer>
