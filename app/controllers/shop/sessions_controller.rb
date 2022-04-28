@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Shop::SessionsController < Devise::SessionsController
-  # before_action :configure_sign_in_params, only: [:create]
+   before_action :configure_sign_in_params, only: [:create]
 
   # GET /resource/sign_in
   # def new
@@ -9,9 +9,8 @@ class Shop::SessionsController < Devise::SessionsController
   # end
 
   # POST /resource/sign_in
-  # def create
-  #   super
-  # end
+  #  def create
+  #  end
 
   # DELETE /resource/sign_out
   # def destroy
@@ -29,7 +28,7 @@ class Shop::SessionsController < Devise::SessionsController
   end
 
   # If you have extra params to permit, append them to the sanitizer.
-  # def configure_sign_in_params
-  #   devise_parameter_sanitizer.permit(:sign_in, keys: [:attribute])
-  # end
+   def configure_sign_in_params
+     devise_parameter_sanitizer.permit(:sign_in, keys: [:shop_name,:prefecture,:city,:other_address,:phone_number])
+   end
 end

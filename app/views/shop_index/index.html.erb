@@ -1,2 +1,78 @@
-<h1>ShopIndex#index</h1>
-<p>Find me in app/views/shop_index/index.html.erb</p>
+<div class="shop_index_header">
+    <div class="shop_index_div_flex">
+        <div class="shop_index_right">
+            <p class="shop_in_right_p">呼び出し：●</p>
+            <p class="shop_in_right_p">お会計：●</p>
+        </div>
+        <div class="shop_index_contents_flex">
+            <p class="shop_in_left_p">
+                <%= link_to "ユーザー１", "#",class:"shop_in_a"%>
+            </p>
+            <p class="shop_in_left_p">
+                <%= link_to "ユーザー2", "#",class:"shop_in_a"%>
+            </p>
+            <p class="shop_in_left_p">
+                <%= link_to "ユーザー3", "#",class:"shop_in_a"%>
+            </p>
+            <p class="shop_in_left_p">
+                <%= link_to "ユーザー4", "#",class:"shop_in_a"%>
+            </p>
+            <p class="shop_in_left_p">
+                <%= link_to "ユーザー5", "#",class:"shop_in_a"%>
+            </p>
+            <p class="shop_in_left_p">
+                <%= link_to "ユーザー6", "#",class:"shop_in_a"%>
+            </p>
+            <p class="shop_in_left_p">
+                <%= link_to "ユーザー7", "#",class:"shop_in_a"%>
+            </p>
+            <p class="shop_in_left_p">
+                <%= link_to "ユーザー8", "#",class:"shop_in_a"%>
+            </p>
+        </div>
+    </div>
+</div>
+<div class="shop_main_wrap_flex">
+    <div class="shop_main_contents">
+        <%= link_to "#",class:"shop_in_a" do%>
+            <%= image_tag "9.png",class: "shop_main_img"%>
+            <p class="shop_main_im_p">無料サービス管理</p>
+        <%end%>
+    </div>
+    <div class="shop_main_contents">
+        <%= link_to "#",class:"shop_in_a" do%>
+            <%= image_tag "7.png",class: "shop_main_img"%>
+             <p class="shop_main_im_p">メニュー管理</p>
+        <%end%>
+    </div>
+    <div class="shop_main_contents">
+        <%= link_to "#",class:"shop_in_a" do%>
+            <%= image_tag "14.png",class: "shop_main_img"%>
+             <p class="shop_main_im_p">新規受注</p>
+        <%end%>
+    </div>
+    <div class="shop_main_contents">
+        <%= link_to "#",class:"shop_in_a" do%>
+            <%= image_tag "13.png",class: "shop_main_img"%>
+             <p class="shop_main_im_p">ユーザー管理</p>
+        <%end%>
+    </div>
+    <div class="shop_main_contents">
+        <%= link_to "#",class:"shop_in_a" do%>
+            <%= image_tag "10.png",class: "shop_main_img"%>
+             <p class="shop_main_im_p">オーダーストップ</p>
+        <%end%>
+    </div>
+    <div class="shop_main_contents">
+        <%= link_to "#",class:"shop_in_a" do%>
+            <%= image_tag "15.png",class: "shop_main_img"%>
+             <p class="shop_main_im_p">受注履歴</p>
+        <%end%>
+    </div>
+    <div class="shop_main_contents">
+        <%= link_to destroy_shop_session_path, data: { turbo_method: :delete },class:"shop_in_a" do%>
+            <%= image_tag "11.png",class: "shop_main_img"%>
+             <p class="shop_main_im_p">ログアウト</p>
+        <%end%>
+    </div>
+</div>

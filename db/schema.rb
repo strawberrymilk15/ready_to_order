@@ -17,6 +17,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_15_075328) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
+    t.string "customer_name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_customers_on_email", unique: true
@@ -29,6 +30,11 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_15_075328) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
+    t.string "shop_name", null: false
+    t.string "prefecture", null: false
+    t.string "city", null: false
+    t.string "other_address", null: false
+    t.integer "phone_number", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_shops_on_email", unique: true

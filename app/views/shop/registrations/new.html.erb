@@ -1,0 +1,66 @@
+<div class="registration_wrap">
+  <%= image_tag "3.png", class:"regi_logo" %>
+
+  <div class="regi_inner">
+    <h1 class="regi_h1">Sign Up</h1>
+    <p class="regi_p">＊会員情報をご入力ください</p>
+    <%= form_with model: @shop,url: shop_registration_path, method: :post,data: { turbo: false },local: true do |f| %>
+      <%= render "shop/shared/error_messages", resource: resource %>
+
+      <div class="field">
+        <%= f.label :メールアドレス ,class:"regi_label"%><span class="regi_span">必須</span><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email" ,class:"regi_field",placeholder:"例)example@example.com" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :パスワード,class:"regi_label"%><span class="regi_span">必須</span>
+        <%= f.password_field :password, autocomplete: "new-password",class:"regi_field",placeholder:"数字・大小英文字含めた６文字以上"  %>
+      </div>
+
+      <div class="field">
+        <%= f.label :パスワード確認,class:"regi_label" %><span class="regi_span">必須</span><br />
+        <%= f.password_field :password_confirmation, autocomplete: "new-password",class:"regi_field",placeholder:"パスワード確認"  %>
+      </div>
+
+      <div class="field">
+        <%= f.label :店舗名,class:"regi_label" %><span class="regi_span">必須</span><br />
+        <%= f.text_field :shop_name, autocomplete: "shop_name",class:"regi_field",placeholder:"例)とんかつ レイディ" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :都道府県,class:"regi_label" %><span class="regi_span">必須</span><br />
+        <%= f.text_field :prefecture, autocomplete: "prefecture",class:"regi_field", placeholder:"例)東京都" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :市区町村,class:"regi_label" %><span class="regi_span">必須</span><br />
+        <%= f.text_field :city, autocomplete: "city",class:"regi_field",placeholder:"例)千代田区" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :その他住所,class:"regi_label" %><span class="regi_span">必須</span><br />
+        <%= f.text_field :other_address, autocomplete: "other_address",class:"regi_field",placeholder:"例)レイディビル47F" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :電話番号,class:"regi_label" %><span class="regi_span">必須</span><br />
+        <%= f.telephone_field :phone_number, autocomplete: "phone_number",class:"regi_field",placeholder:"例)000-0000-0000" %>
+      </div>
+
+      <%# <div class="agree_term">
+        <%= f.check_box :agreement,class:"regi_check_box" ,:as => :boolean, checked:false %>
+         <%# p class="regi_checkbox_p"> %>
+          <%# <%= link_to "利用規約","#",class:"regi_check_a"%>
+        <%# に同意する
+        </p>
+      </div> %>
+
+      <%= f.submit "新規会員登録" , class:"regi_submit"%>
+
+      <p class="go-login">
+        <%= link_to "すでにご登録済みの方はこちら",new_shop_session_path ,class:"go-login-a"%>
+      </p>
+
+    <% end %>
+  </div>
+</div>

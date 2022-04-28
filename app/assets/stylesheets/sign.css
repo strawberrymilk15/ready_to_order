@@ -1,0 +1,136 @@
+img.regi_logo {
+    width: 60%;
+    margin: 2rem auto 1rem;
+    display: block;
+}
+h1.regi_h1 {
+    text-align: center;
+    margin: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.regi_inner {
+    border: 1px solid #008bc2;
+    border-image: linear-gradient(to bottom, #008bc2 10%, #53dcca 100%);
+    border-image-slice: 1;
+    width: 80%;
+    padding: 0.8rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+}
+p.regi_p {
+    margin: 1rem auto;
+    font-weight: 600;
+    font-size: .8rem;
+    text-align: center;
+}
+.field {
+    width: 80%;
+    margin: 1rem auto;
+}
+label.regi_label {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    display: inline-block;
+    color: slategray;
+}
+span.regi_span {
+    font-size: .8rem;
+    margin-left: 0.3rem;
+    color: indianred;
+}
+input#shop_email,input#shop_password,input#shop_password_confirmation,input#shop_shop_name,input#shop_prefecture,input#shop_city,input#shop_other_address,input#shop_phone_number {
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    height: 40px;
+    font-size: .8rem;
+}
+.agree_term {
+    width: 80%;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+}
+p.regi_checkbox_p {
+    font-size: .9rem;
+    margin-left: 0.5rem;
+}
+a.regi_check_a {
+    text-decoration: underline;
+    color: coral;
+}
+a.regi_check_a {
+    text-decoration: underline;
+    color: dodgerblue;
+}
+input.regi_submit {
+    padding: 1rem;
+    display: block;
+    background: -moz-linear-gradient(to bottom,#b3aae9,#e595f4 10%,#29b8d5);
+    background: -webkit-linear-gradient(to bottom,#b3aae9, #e595f4 10%,#29b8d5);
+    background: linear-gradient(to bottom,#e595f4 10%,#b3aae9,#29b8d5);
+    width: 70%;
+    border-radius: 50px;
+    color: white;
+    margin: 2rem auto;
+    text-align: center;
+    transition: all 0.5s ease 0s;
+}
+input.regi_submit:hover {
+    background: -moz-linear-gradient(to bottom,#c4c0dc,#d5b2db 10%,#a0d5e0);
+    background: -webkit-linear-gradient(to bottom,#c4c0dc, #d5b2db 10%,#a0d5e0);
+    background: linear-gradient(to bottom,#d5b2db 10%,#c4c0dc,#a0d5e0);
+}
+.registration_wrap {
+    margin-bottom: 3rem;
+}
+p.go-login {
+    font-size: .8rem;
+    text-decoration: underline;
+    color: slategray;
+    text-align: center;
+    margin: 2rem auto;
+}
+.actions_flex {
+    width: 80%;
+    margin: 1rem auto;
+}
+label.rem_label {
+    font-size: .9rem;
+    margin-left: 0.3rem;
+}
+input.log_submit {
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem 0.5rem;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    background: -moz-linear-gradient(to bottom,#356af0,#5fbeed 10%,#29b8d5);
+    background: -webkit-linear-gradient(to bottom,#356af0, #5fbeed 10%,#29b8d5);
+    background: linear-gradient(to bottom,#5fbeed 10%,#356af0,#29b8d5);
+    transition: all 0.5s ease 0s;
+}
+input.log_submit:hover {
+    background: -moz-linear-gradient(to bottom,#7095f5,#89d1f5 10%,#55d8f3);
+    background: -webkit-linear-gradient(to bottom,#7095f5, #89d1f5 10%,#55d8f3);
+    background: linear-gradient(to bottom,#89d1f5 10%,#7095f5,#55d8f3);
+}
+.log_checkbox {
+    display: flex;
+    align-items: center;
+}
+.log_bottom_div {
+    font-size: .8rem;
+    width: 80%;
+    margin: 1rem auto;
+}
+a.log_bottom_a {
+    text-decoration: underline;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: slategray;
+}
