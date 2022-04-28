@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :shop_index, only: [:index]
   resources :customers_index, only: [:index]
-
+s:s
   devise_for :shops, controllers: {
     sessions: 'shops/sessions',
     registrations: 'shops/registrations'
